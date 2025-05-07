@@ -1,0 +1,5 @@
+# Turn on the rewrite engine
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/database\.sqlite$
+RewriteRule ^ /?page=denied [L]
